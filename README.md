@@ -8,7 +8,7 @@ http://localhost:3005/ 또는 liveserver로 실행
 [0415 - jquery](https://github.com/rambus2006/UI-UXEngineering/tree/master/02_jquery)
 <br/>
 <p>
-[0425 - AJAX](https://github.com/rambus2006/UI-UXEngineering/tree/master/03_AJAX)
+[0425 - AJAX](https://github.com/rambus2006/UI-UXEngineering/tree/master/03_AJAX) <br/>
   터미널에 "npm install express --save","npm i cors" 설치 
 </p>
 <br/>
