@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+        .page{
+            height: 100vh;
+        }
+        .page-1{
+            background-color: aqua;
+        }
+        .page-2{
+            background-color: purple;
+        }
+        .page-3{
+            background-color: aqua;
+        }
+        .page-4{
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">헤더</div>
+    <div class="page page-1">페이지1</div>
+    <div class="page page-2">페이지2</div>
+    <div class="page page-3">페이지3</div>
+    <div class="page page-4">페이지4</div>
+    <div class="footer">푸터</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/jquery.scrollify.js"></script>
+    <script>
+          $(function() {
+          $.scrollify({
+            section : ".page",
+            interstitialSection:".header, .footer",
+            scrollSpeed: 1100,
+          });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="song_list"></div>
+    <input type="button" onclick="search_event()" value="검색">
+    <script>
+        const song=[
+            "나는 아픈 건 딱 질색이니까 - (여자)아이들",
+            "밤양갱 - 비비(BIBI)",
+            "첫 만남은 계획대로 되지 않아 - TWS(투어스)",
+            "GODS - 뉴진스(NEW JEANS)",
+            "Love wins all - 아이유"
+        ];
+
+        //songs 배열 내용 출력 
+        const songListElement = document.getElementById("song_list")
+        songListElement.innerHTML = "";
+        for(let i =0;i<song.length;i++){
+            songListElement.innerHTML +=song[i]+"<br>";
+        }
+        //추천곡 - gods 이런식으로 랜덤으로 뜨게 하기 
+        songListElement.innerHTML+="<br>추천 곡 : " + suggestSong();
+
+        //곡 검색 
+        function searchForSong(word){
+            word = word.toUpperCase(); //toUpperCase대문자로 바꿔주는 메서드 
+            let songs;
+            for(let i=0;i<song.length;i++){
+                song = songs[i].toUpperCase();
+                if(song.indexOf(word)>=0){//indexOf : 지금 인덱스가 배열에 있는지 알아내는 메서드. 없으면  -1을 리턴한다.  
+                    return song;
+                } 
+            }
+            return "없는 곡입니다. "
+        }
+
+        function search_event(word){
+            const search_data = prompt("검색할 곡의 이름을 입력해주세요");
+            const matchedSong = searchForSong(search_data);
+            alert(`검색결과 : ${matchedSong}`);
+        }
+        // 시험문제 
+        function suggestSong(){
+            //1. Math.random 메서드로 랜덤 인덱스 구하기 
+            let index = Math.floor(Math.random()*song.length)
+            return song[index];
+        }
+    </script>
+</body>
+</html>

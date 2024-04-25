@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>동물 소리</title>
+    <!-- 조건에 맞는 울음소리가 나오는 html  -->
+</head>
+<body>
+    <!-- 결과가 출력되는 div 태그  -->
+    <div id="sounds"></div>
+    <!-- javascript:on_animals('dog')는 javascript에서 on_animals()함수를 호출함 -->
+    <a href="javascript:on_animals('dog')">강아지</a>
+    <a href="javascript:on_animals('cat')">고양이</a>
+    <a href="javascript:on_animals('duck')">오리</a>
+</body>
+</html>
+<script>
+    //1. 강아지인지, 고양이인지, 오리인지 판단되는 animal 변수 선언 
+    const animal = ""; //dog or cat or duck 이 들어간다. 
+    //2. html 에서 sounds id를 가지고 있는 태그 가져와서 soundsTag 변수에 넣기  
+    const soundsTag = document.getElementById("sounds");
+    
+    //3. animal 을 매개변수로 주고, 강아지, 고양이, 오리인지 판단하여 그에 맞는 울음소리를 html 에 넣는 함수 
+    // 해당 요소의 HTML값 변경
+    function on_animals(animal){
+        // 4. 강아지인 경우 
+        if(animal == "dog"){
+            soundsTag.innerHTML = "멍멍 ";
+        // 4. 고양이인 경우 
+        }else if(animal == "cat"){
+            soundsTag.innerHTML = "야옹~";
+        // 4. 오리인 경우 
+        }else if(animal == "duck"){
+            soundsTag.innerHTML = "꽥꽥!";
+        // 4. 아무것도 없는 경우
+        }else{
+            soundsTag.innerHTML = "몰라요";
+        }
+    }
+   
+    
+</script>

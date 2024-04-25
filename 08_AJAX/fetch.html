@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch연습</title>
+</head>
+<body>
+    <button onclick="fetch_event()">fetch 연습</button>
+    <button onclick="fetch_event2()">fetch 연습1</button>
+    <script>
+        function fetch_event(){
+            alert("연결완료 ");
+            let url = "http://localhost:3005/";
+            fetch(url)
+            .then(res => res.json())
+            .then(data => console.log("data : ",data));
+            
+        }
+        function fetch_event2(){
+            alert("연결완료 ");
+            let url = "http://localhost:3005/";
+            fetch(url,{method:"POST"})
+            .then(res => res.json())
+            .then(data => console.log("data : ",data));
+            
+        }
+        //매개변수를 함수로 넣는 것이 콜백함수이다.
+
+    </script>
+</body>
+</html>

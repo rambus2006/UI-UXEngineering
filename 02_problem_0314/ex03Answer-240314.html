@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>주사위 게임</title>
+  <style>
+    .dice {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 24px;
+      line-height: 100px;
+      display: inline-block;
+      margin: 5px;
+    }
+  </style>
+  <script>
+    const result = [];  
+    function rollDice() {
+      const diceElement = document.getElementById("dice_group");
+      const arr=[];
+    
+      let ii=0;
+      let obj;
+      for(let ii=0;ii<6;ii++){
+        let randomNumber = Math.floor(Math.random() * 6) + 1;
+        arr[ii]=randomNumber;
+        let randomDiv = `<div class="dice">${randomNumber}</div>`;
+        diceElement.innerHTML = randomDiv;
+        // console.log(arr[ii])
+        // obj = Object.assign({},arr); //Object.assign()으로 배열을 객체로 변환
+      }
+    //   result.push(obj);
+      arr.push(arr)
+      window.localStorage.setItem("dice",arr)
+      console.log(arr);
+    }
+  </script>
+</head>
+<body>
+  <h1>주사위 게임</h1>
+  <div id="dice_group">  </div>
+  <button onclick="rollDice()">주사위 6번던지기</button>
+</body>
+</html>

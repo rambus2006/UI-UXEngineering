@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function makeSentence(){
+            const words1 = ["어썸","라이징","허니","샤이닝","크레이지"]
+            const words2 = ["파워풀","크라이","블러디","반","스피디"]
+            const words3 = ["제이","베이비","몽키","펀치","드래곤"]
+            
+            //1.rend1,2,3에 각각 나타낼 index 랜덤값으로 지정하기 
+            //Math.floor로 버림하여 정수로 만들기 
+            // words.length로 배열의 길이만큼 random범위 만들기 
+            let rand1 = Math.floor(Math.random()*words.length);
+            let rand2 = Math.floor(Math.random()*words.length);
+            let rand3 = Math.floor(Math.random()*words.length);
+            
+
+            //2. 만든 인덱스로 문장 생성하기 
+            //1) 변수 let 선언
+            //2) words1 배열의 랜덤 인덱스 값 가져오기 
+            //3) words2 배열의 랜덤 인덱스 값 가져오기 
+            //4) words3 배열의 랜덤 인덱스 값 가져오기 
+            //5) 중간에 구분을 위해 띄여쓰기
+            let sentence = words1[rand1] + " " + words2[rand2] + " " + words3[rand3]
+
+            //3. 그 문장을 id가 sentence 인 곳에 나타내기 
+            //1) getElementById 메서드로 sentence 아이디인 태그 가져오기
+            //2) sentenceElement변수에 대입  
+            const sentenceElement = document.getElementById("sentence");
+            //sentenceElement 변수를 html 안에 아까 위에서 만든 랜덤 배열 문장을 추가한다. 
+            sentenceElement.innerHTML= sentence;
+        }
+    </script>
+    <!-- sentence id값이 있는 곳 -->
+    <p id="sentence" ></p>
+</body>
+</html>
