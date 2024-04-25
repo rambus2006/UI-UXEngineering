@@ -1,3 +1,5 @@
+<div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" /><img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="icon" width="65" height="65" /></div>
+
 ### UIUX
 
 실행방법
@@ -16,6 +18,6 @@ https://apis.map.kakao.com/web/guide/ 참고
 [0415 - jquery](https://github.com/rambus2006/UI-UXEngineering/tree/master/02_jquery)
 <br/>
 [0425 - AJAX](https://github.com/rambus2006/UI-UXEngineering/tree/master/03_AJAX)
-- 터미널에 "npm install express --save","npm i cors" 설치
-- http://localhost:3005/ 또는 liveserver로 실행 
+ 터미널에 "npm install express --save","npm i cors" 설치
+ http://localhost:3005/ 또는 liveserver로 실행 
 <br/>
