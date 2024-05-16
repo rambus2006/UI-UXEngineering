@@ -1,0 +1,26 @@
+
+<script>
+    function rollDice() {
+      const diceElement = document.getElementById("dice_group");
+      const numArray = new Array(); // 배열 선언
+      for(let ii = 0 ; ii < 6 ; ii++){
+        let randomNumber = Math.floor(Math.random() * 6) + 1;
+        let randomDiv = `<div class="dice">${randomNumber}</div>`;
+        diceElement.innerHTML += randomDiv;
+        numArray.push(randomNumber);
+      }
+      console.log("배열 : ",numArray); //배열 출력
+      localStorage.setItem("num_array", numArray);
+      console.log("로컬스토리지값 출력 : ",localStorage.getItem("num_array"));
+    }
+  </script>
+</head>
+<body>
+  <h1>주사위 게임</h1>
+  <div id="dice_group">
+  </div>
+  <button onclick="rollDice()">주사위 6번던지기</button>
+</body>
+</html>
+
+

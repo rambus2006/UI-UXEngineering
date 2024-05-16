@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 2. jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
+        // 3. (document).ready()을 사용해서 안에 콜백함수를 실행
         $(document).ready(function(){
+            // 3-1. 선택자를 사용해서 슬라이드로 올라가며 사라지게 한다. 
             $(".displaySlide div").slideUp();
+            // 3-2. 선택자를 사용해서 이벤트를 등록한다.(이벤트명,콜백함수)
             $(".displaySlide p").on("click",function(e){
                 $(this).next().slideToggle();
             });
@@ -17,6 +21,7 @@
 
 </head>
 <body>
+    <!-- 1. html 선언 -->
     <div class="displaySlide">
         <p>1. 오늘 뭐하지</p>
         <div>수업하지...</div>

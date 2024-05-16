@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch연습</title>
+</head>
+<body>
+    <input type="date" id="date_input" defaultvalue="today()">
+    <button onclick="fetch_event()">급식조회</button>
+    <div id="menuDiv"></div>
+ 
+    <script>
+        document.getElementById("date_input").value = new Date().toISOString().slice(0,10);
+        function fetch_event(){
+            alert("연결완료 ");
+            let dateData = document.getElementById("date_input").value
+            
+            //날짜를 구하는 함수  ISO형식
+            //let dateData = new Date().toISOString().slice(0,10); //2024-05-16
+            //중간의 '-'를 없애는 함수 
+            dateData = dateData.replaceAll("-","");
+            //정규식형식으로 나타내기(옛날방식) 
+            //dateData.replace(/-/g,"");
+
+
+            let url = `https://open.neis.go.kr/hub/mealServiceDietInfo?Type=json&pIndex=1&pSize=100&ATPT_OFCDC_SC_CODE=B10&SD_SCHUL_CODE=7011569&MLSV_YMD=${dateData}`;
+            fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                console.log("data : ",data);
+                const menuDiv = document.getElementById("menuDiv");
+
+                if(data.mealServiceDietInfo){
+                    const menuData = data.mealServiceDietInfo[1].row;
+                    console.log("menuData",menuData);
+
+                    let menudiv_content = "";
+                    menuData.forEach((menuLow)=>{
+                        
+                        menudiv_content +=`<h2>${menuLow.MMEAL_SC_NM}</h2>${menuLow.DDISH_NM}`
+                    })
+                    menuDiv.innerHTML=menudiv_content;
+                }else{
+                    menuDiv.innerHTML="급식정보를 불러오지 못했습니다.";
+                }
+
+            }
+            );
+            
+        }
+       
+        // 이거 -> 카드로 만들기 (부트스트랩 연결) -> fetch 쓰는 거 까지 해서 문서 한두장 + 코드 -> 수행 (it쇼 끝나고 1~2주)
+        //매개변수를 함수로 넣는 것이 콜백함수이다.
+
+    </script>
+</body>
+</html>
