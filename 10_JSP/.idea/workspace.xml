@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e778635e-810b-4e5f-9ca1-bbc37b780c36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../day01-/ex01_ answer1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day01-/ex01_ explan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02-240314/ex02Problem-240314.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day02-240314/ex03Answer-240314.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-240318/ex04-2403218.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-240318/ex05-240318.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-240318/ex06-240318.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03-240318/ex07-240318.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day04-240325/ex01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day04-240325/ex02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day04-240325/ex03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day04-240325/ex04.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day04-240325/ex05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day04-240325/ex06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day04-240325/ex07.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2krWvnZOViVyhekG2P0JtArCwlB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "B:/002_Schoolstudy/003_UIUXEngineering/day06/JSP_BASE2"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e778635e-810b-4e5f-9ca1-bbc37b780c36" name="Changes" comment="" />
+      <created>1724042408819</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724042408819</updated>
+    </task>
+    <servers />
+  </component>
+</project>
