@@ -15,9 +15,10 @@ https://apis.map.kakao.com/web/guide/ 참고
 <br/>
 [05_Bootstrap](https://github.com/rambus2006/UI-UXEngineering/tree/master/01_bootstrap)
 <br/>
+<b>03.28~04.15</b>
 [06_jquery](https://github.com/rambus2006/UI-UXEngineering/tree/master/02_jquery)
 <br/>
-<p>03.28~04.15</p>
+
 [AJAX](https://github.com/rambus2006/UI-UXEngineering/tree/master/03_AJAX)
  터미널에 "npm install express --save","npm i cors" 설치
  http://localhost:3005/ 또는 liveserver로 실행 
